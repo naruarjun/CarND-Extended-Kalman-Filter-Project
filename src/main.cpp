@@ -169,4 +169,29 @@ int main() {
   }
   
   h.run();
+  //small testing code for one by one inputs
+
+  // double rho,rho_dot,phi,timestamp;
+  // int L;
+  // FusionEKF fusionEKF;
+  // while(1){
+  //   std::cin>>L;
+  //   if(L==0){
+  //     std::cin>>rho>>phi>>rho_dot>>timestamp;
+  //     MeasurementPackage meas_package;
+  //     meas_package.sensor_type_ = MeasurementPackage::RADAR;
+  //     meas_package.raw_measurements_ = VectorXd(3);
+  //     meas_package.raw_measurements_ << rho,phi, rho_dot;
+  //     meas_package.timestamp_ = timestamp;
+  //     fusionEKF.ProcessMeasurement(meas_package);
+  //   }else{
+  //     std::cin>>rho>>phi>>timestamp;
+  //     MeasurementPackage meas_package;
+  //     meas_package.sensor_type_ = MeasurementPackage::LASER;
+  //     meas_package.raw_measurements_ = VectorXd(2);
+  //     meas_package.raw_measurements_ << rho,phi;
+  //     meas_package.timestamp_ = timestamp;
+  //     fusionEKF.ProcessMeasurement(meas_package);
+  //   }
+  // }
 }
